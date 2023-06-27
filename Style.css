@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: rgb(6,20,46);
+  background: linear-gradient(3600deg,rgba(241,145,109,1) 0%,
+                                      rgba(189,131,184,1) 30%,
+                                      rgba(71,62,102,1) 70%,
+                                      rgba(27,51,88,1) 90%,
+                                      rgba(6,20,46,1) 100%)
+                                                                                                 
+}
+header {
+  background-color: #000000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  height: 7.5%;
+  position: absolute;
+  top: 0;
+  }
+header h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+header nav ul li a {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: White;
+}        
+header nav ul li{
+  list-style: none;
+}
+header nav ul li a :hover{
+  color: rgb(51, 98, 185);
+}
+
+#main-container{
+  width: 35%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;    
+  margin-top: 1%
+}
+.respostas{
+  width: 100%;
+  height: 15%;
+  display: flex;
+  flex-direction: row;
+}
+#div-pergunta{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 40%;
+  border-radius: 15px;
+  background:white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 5%;
+  margin-bottom: 5%;
+}
+#div-media{
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 20%;
+  border-radius: 15px;
+  background:white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 5%;
+  margin-bottom: 5%;
+}
+#div-sim{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+  border-radius: 15px;
+  background:white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-right: 30%;
+  margin-left: 5%;
+
+}
+#div-sim:hover{
+  background:rgb(0, 169, 34);
+  color: white;
+}
+#div-nao{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+  border-radius: 15px;
+  background:white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-right: 5%;
+}
+#div-nao:hover{
+  background:rgb(154, 0, 0);
+  color: white;
+}
+#div-resposta{
+  width: 90%;
+  height: 10%;
+  border-radius: 15px;
+  background:white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-top: 5%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+}
+
+#provar{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 20%;
+  background: rgb(1, 28, 78);
+  border-radius: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 5%;
+  color: white;
+}
+#provar:hover{
+
+  background: rgb(51, 98, 185);
+  color: rgb(0, 0, 0);
+}
+#div-table{
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-bottom: 5%;
+}
+#escolherBimestre{
+  display: none;
+  flex-direction: row;
+  width: 100%;
+  height: 20%;
+}
+#escolhaUmBimestre{
+  display: flex;
+}
+#bimestre1{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5%;
+  width: 30%;
+  height: 50px;
+  border-radius: 10px;
+  background:white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#bimestre2{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5%;
+  width: 30%;
+  height: 50px;
+  border-radius: 10px;
+  background:white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#bimestre3{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 50px;
+  border-radius: 10px;
+  background:white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#bimestre1:hover{
+  background:rgb(1, 28, 78);
+  color: white;
+}
+#bimestre2:hover{
+  background:rgb(1, 28, 78);
+  color: white;
+}
+#bimestre3:hover{
+  background:rgb(1, 28, 78);
+  color: white;
+}
+#tabelaBimestre1{
+  display: none;
+  text-align: left;
+}
+#tabelaBimestre2{
+  display: none;
+  text-align: left;
+}
+#tabelaBimestre3{
+  display: none;
+  text-align: left;
+}
+#imagem{
+  width: 35%;
+  height: 35%;
+}
+
+table th{
+  background-color: rgb(1, 28, 78);
+  color: white;
+  text-align: center;
+  margin-right: 15%;
+  min-width: 175px;
+  padding: 2% 7.5% 2% 7.5%;
+}
+table td{
+  min-width: 175px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 2% 7.5% 2% 5%;
+}
+
+table td ul li{
+  list-style: circle;
+}
+
+#tabelaBimestre1 {
+  border-radius: 10%;
+
+}
+@media (max-width: 1060px) {
+  #main-container{display: none;}
+  .respostas{display: none;}
+  #div-pergunta{display: none;}
+  #div-media{display: flex;}
+  #div-sim{display: none;}
+  #div-nao{display: none;}
+  #div-resposta{display: none;}
+  #provar{display: none;}
+  #escolherBimestre{display: none;}
+  #escolhaUmBimestre{display: none;}
+  #bimestre1{display: none;}
+  #bimestre2{display: none;}
+  #bimestre3{display: none;}
+  #tabelaBimestre1{display: none;}
+  #tabelaBimestre2{display: none;}
+  #tabelaBimestre3{display: none;}
+  #imagem{display: none;}
+  table th{display: none;}
+  table td{display: none;}
+  header h1{font-size: medium;}
+  header nav ul li a {display: none;}
+  
+}
+@media (max-width: 1160px){
+  #div-resposta p{
+    font-size: 10px;
+  }
+}
+
